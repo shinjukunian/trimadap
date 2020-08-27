@@ -1,0 +1,3 @@
+[submodule "sseNeon"]
+	path = sseNeon
+	url = git@github.com:DLTcollab/sse2neon.git

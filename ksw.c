@@ -26,7 +26,12 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
+#if !defined(__aarch64__)
 #include <emmintrin.h>
+#else
+#include "sseNeon/sse2neon.h"
+#endif
+#include "ksw.h"
 #include "ksw.h"
 
 #ifdef __GNUC__
